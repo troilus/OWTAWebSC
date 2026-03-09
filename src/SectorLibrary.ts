@@ -64,7 +64,7 @@ export class TimberHearth extends Sector
 {  
   load(): void
   {
-    this._name = "木灶星";
+    this._name = "木炉星";
     this.loadFromJSON("data/sectors/timber_hearth.json");
     //setAnchorOffset(100, 30);
   }
@@ -176,7 +176,7 @@ export class DarkBramble extends Sector
 
   load(): void
   {
-    this._name = "黑荆星";
+    this._name = "黑棘星";
     this.loadFromJSON("data/sectors/dark_bramble.json");
 
     for (let i: number = 0; i < this._fogLightNodes.length; i++)

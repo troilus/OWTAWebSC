@@ -159,7 +159,7 @@ export class TimberHearthButton extends SectorButton
 {
   constructor(x: number, y: number, sector: Sector)
   {
-    super("木灶星", x, y, 80, 80, sector);
+    super("木炉星", x, y, 80, 80, sector);
   }
   
   drawPlanet(): void
@@ -204,7 +204,7 @@ export class DarkBrambleButton extends SectorButton
 {
   constructor(x: number, y: number, sector: Sector)
   {
-    super("黑荆星", x, y, 230, 230, sector);
+    super("黑棘星", x, y, 230, 230, sector);
   }
   
   drawPlanet(): void
