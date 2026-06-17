@@ -4,7 +4,7 @@ import { Message } from "./GlobalMessenger";
 import { Clue } from "./PlayerData";
 import { OWScreen } from "./Screen";
 import { EndScreen } from "./TitleScreen";
-import { feed, timeLoop, gameManager, playerData, messenger, locator, mediumFontData } from "./app";
+import { feed, timeLoop, gameManager, playerData, messenger, locator, MEDIUM_FONT } from "./app";
 
 export abstract class EventScreen extends OWScreen implements DatabaseObserver
 {
@@ -51,7 +51,7 @@ export abstract class EventScreen extends OWScreen implements DatabaseObserver
 
 		fill(0, 0, 100);
 
-		textFont(mediumFontData);
+		textFont(MEDIUM_FONT);
 		textSize(18);
 		textAlign(LEFT, TOP);
 

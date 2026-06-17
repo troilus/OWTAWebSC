@@ -3,7 +3,7 @@ import { Ship, Player } from "./Entity";
 import { OWNode } from "./Node";
 import { Sector } from "./Sector";
 import { QuantumMoon } from "./SectorLibrary";
-import { locator, smallFontData } from "./app";
+import { locator, SMALL_FONT } from "./app";
 import { println } from "./compat";
 
 export abstract class SectorButton extends Button
@@ -71,7 +71,7 @@ export abstract class SectorButton extends Button
   drawZoomPrompt(): void
   {
     textSize(14);
-    textFont(smallFontData);
+    textFont(SMALL_FONT);
 
     fill(0, 0, 0);
     stroke(0, 0, 100);

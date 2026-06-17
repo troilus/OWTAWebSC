@@ -1,7 +1,7 @@
 import { Color } from "p5";
 import { Entity } from "./Entity";
 import { Vector2 } from "./Vector2";
-import { smallFontData } from "./app";
+import { SMALL_FONT } from "./app";
 
 export interface ButtonObserver
 {
@@ -142,7 +142,7 @@ export class Button extends Entity
   {
     fill(0, 0, 100, alpha);
     textSize(14);
-    textFont(smallFontData);
+    textFont(SMALL_FONT);
     textAlign(CENTER, CENTER);
 
     if (this.enabled) 

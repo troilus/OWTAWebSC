@@ -1,4 +1,3 @@
-import { Font } from "p5";
 import { AudioManager } from "./AudioManager";
 import { Frequency } from "./Enums";
 import { GameManager } from "./GameManager";
@@ -34,12 +33,10 @@ export const START_WITH_COORDINATES: boolean = false;
 let lastMillis: number;
 let deltaMillis: number;
 
-export let smallFontData: Font;
-export let mediumFontData: Font;
+export const SMALL_FONT = "Microsoft YaHei, SimHei, sans-serif";
+export const MEDIUM_FONT = "Microsoft YaHei, SimHei, sans-serif";
 
 (window as any).preload = function preload(): void {
-  smallFontData = loadFont("data/fonts/JiangChengYuanTi-400W.ttf");
-  mediumFontData = loadFont("data/fonts/JiangChengYuanTi-400W.ttf");
   preloadAudio("data/audio/ow_kazoo_theme.mp3");
   preloadJSONObject("data/sectors/brittle_hollow.json");
   preloadJSONObject("data/sectors/comet.json");
@@ -142,11 +139,11 @@ export function resetLocator(): void {
 export function smallFont(): void
 {
   textSize(14);
-  textFont(smallFontData);
+  textFont(SMALL_FONT);
 }
 
 export function mediumFont(): void
 {
   textSize(18);
-  textFont(mediumFontData);
+  textFont(MEDIUM_FONT);
 }

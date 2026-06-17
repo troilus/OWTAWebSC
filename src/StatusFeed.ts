@@ -1,5 +1,5 @@
 import { Color } from "p5";
-import { mediumFontData, messenger, smallFontData } from "./app";
+import { MEDIUM_FONT, messenger, SMALL_FONT } from "./app";
 import { GlobalObserver, Message } from "./GlobalMessenger";
 
 export class StatusFeed implements GlobalObserver
@@ -74,11 +74,11 @@ export class StatusLine
     }
 
     textAlign(LEFT);
-    textFont(mediumFontData);
+    textFont(MEDIUM_FONT);
     textSize(18);
     fill(this._lineColor);
     text(this._line.substring(0, min(this._line.length, this.getDisplayLength())), x, y);
-    textFont(smallFontData);
+    textFont(SMALL_FONT);
 
     // is this line fully displayed?
     if (this._line.length <= this.getDisplayLength())

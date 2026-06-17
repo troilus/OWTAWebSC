@@ -4,7 +4,7 @@ import { Entity } from "./Entity";
 import { Curiosity } from "./Enums";
 import { Clue } from "./PlayerData";
 import { OWScreen } from "./Screen";
-import { playerData, feed, gameManager, mediumFontData } from "./app";
+import { playerData, feed, gameManager, MEDIUM_FONT } from "./app";
 
 export interface DatabaseObserver
 {
@@ -98,7 +98,7 @@ export class DatabaseScreen extends OWScreen implements ClueButtonObserver
       _displayText = "暂无条目";
     }
 
-    textFont(mediumFontData);
+    textFont(MEDIUM_FONT);
     textSize(18);
     textAlign(LEFT, TOP);
     fill(0, 0, 100);

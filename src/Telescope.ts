@@ -4,7 +4,7 @@ import { Frequency } from "./Enums";
 import { OWNode } from "./Node";
 import { Sector } from "./Sector";
 import { Vector2 } from "./Vector2";
-import { frequencyToString, mediumFontData, playerData, smallFontData } from "./app";
+import { frequencyToString, MEDIUM_FONT, playerData, SMALL_FONT } from "./app";
 
 export class FrequencyButton extends Button
 {
@@ -78,9 +78,9 @@ export class Telescope
 
 		fill(0, 0, 100);
 		textSize(18);
-		textFont(mediumFontData);
+		textFont(MEDIUM_FONT);
 		text(frequencyText, xPos, 40);
-		textFont(smallFontData);
+		textFont(SMALL_FONT);
 
 		// draw signal feedback
 		stroke(0, 0, 100);

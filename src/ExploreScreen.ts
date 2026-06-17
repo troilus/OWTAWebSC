@@ -4,7 +4,7 @@ import { ExploreData } from "./ExploreData";
 import { OWNode } from "./Node";
 import { Clue } from "./PlayerData";
 import { OWScreen } from "./Screen";
-import { feed, timeLoop, gameManager, locator, mediumFontData } from "./app";
+import { feed, timeLoop, gameManager, locator, MEDIUM_FONT } from "./app";
 
 export class ExploreScreen extends OWScreen implements DatabaseObserver
 {
@@ -45,7 +45,7 @@ export class ExploreScreen extends OWScreen implements DatabaseObserver
 
 		fill(0, 0, 100);
 
-		textFont(mediumFontData);
+		textFont(MEDIUM_FONT);
 		textSize(18);
 		textAlign(LEFT, TOP);
 

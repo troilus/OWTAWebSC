@@ -10,7 +10,7 @@ import { Clue } from "./PlayerData";
 import { OWScreen } from "./Screen";
 import { Sector } from "./Sector";
 import { SectorEditor } from "./SectorEditor";
-import { gameManager, feed, timeLoop, EDIT_MODE, mediumFontData, smallFont } from "./app";
+import { gameManager, feed, timeLoop, EDIT_MODE, MEDIUM_FONT, smallFont } from "./app";
 
 export class SectorScreen extends OWScreen implements NodeButtonObserver, NodeActionObserver, DatabaseObserver
 {
@@ -141,7 +141,7 @@ export class SectorScreen extends OWScreen implements NodeButtonObserver, NodeAc
 
     fill(0, 0, 100);
     textSize(18);
-    textFont(mediumFontData);
+    textFont(MEDIUM_FONT);
     textAlign(RIGHT);
     text(this._sector.getName(),width - 20, height - 100);
 
